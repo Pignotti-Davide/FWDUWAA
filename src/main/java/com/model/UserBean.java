@@ -1,8 +1,8 @@
-package model;
+package com.model;
 
 import java.util.HashMap;
 
-import model.entity.UserPost;
+import com.model.entity.UserPost;
 
 public class UserBean {
 

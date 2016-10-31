@@ -1,9 +1,9 @@
-package dao;
+package com.dao;
 
 import java.util.List;
 
-import model.CommentBean;
-import model.entity.Comment;
+import com.model.CommentBean;
+import com.model.entity.Comment;
 
 public interface CommentDao {
 

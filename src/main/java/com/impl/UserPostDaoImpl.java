@@ -1,4 +1,4 @@
-package dao.impl;
+package com.impl;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import dao.UserPostDao;
-import model.UserPostBean;
-import model.entity.UserPost;
+import com.dao.UserPostDao;
+import com.model.UserPostBean;
+import com.model.entity.UserPost;
 
 public class UserPostDaoImpl implements UserPostDao{
 

@@ -1,9 +1,9 @@
-package dao;
+package com.dao;
 
 import java.util.List;
 
-import model.UserPostBean;
-import model.entity.UserPost;
+import com.model.UserPostBean;
+import com.model.entity.UserPost;
 
 public interface UserPostDao {
 

@@ -1,16 +1,15 @@
-package model.entity;
+package com.model;
 
 import java.util.HashMap;
 
-public class UserPost {
-	
+import com.model.entity.Comment;
+
+public class UserPostBean {
+
 	private Long userPostId;
 	private String title;
 	private String content;
 	private HashMap<Long,Comment> comments;
-	
-	
-	
 	
 	public Long getUserPostId() {
 		return userPostId;
@@ -36,4 +35,5 @@ public class UserPost {
 	public void setComments(HashMap<Long, Comment> comments) {
 		this.comments = comments;
 	}
+	
 }

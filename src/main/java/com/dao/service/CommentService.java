@@ -1,4 +1,4 @@
-package dao.service;
+package com.dao.service;
 
 import java.util.List;
 
@@ -11,40 +11,39 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
-import dao.impl.UserDaoImpl;
-import model.UserBean;
-import model.entity.User;
+import com.impl.CommentDaoImpl;
+import com.model.CommentBean;
+import com.model.entity.Comment;
 
-@Path("/user")
-public class UserService {
+@Path("/comment")
+public class CommentService {
 
 	
-
 	@SuppressWarnings("unchecked")
 	@GET
 	@Produces("application/json")
-	public List<User> getUsers() {
-		UserDaoImpl dao = new UserDaoImpl();
+	public List<Comment> getComments() {
+		CommentDaoImpl dao = new CommentDaoImpl();
 		@SuppressWarnings("rawtypes")
-		List users = dao.getUsers();
-		return users;
+		List comments = dao.getComments();
+		return comments;
 		}
 	
 	@POST
 	@Path("/create")
 	@Consumes("application/json")
-	public Response addUser(UserBean user){
-		UserDaoImpl dao = new UserDaoImpl();
-		dao.createUser(user);
+	public Response addComment(CommentBean comment){
+		CommentDaoImpl dao = new CommentDaoImpl();
+		dao.createComment(comment);
 		return Response.ok().build();
 		}
 	
 	@DELETE
 	@Path("/delete/{id}")
 	@Consumes("application/json")
-	public Response deleteUser(@PathParam("id") long id){
-		UserDaoImpl dao = new UserDaoImpl();
-		int count = dao.deleteUser(id);
+	public Response deleteComment(@PathParam("id") long id){
+		CommentDaoImpl dao = new CommentDaoImpl();
+		int count = dao.deleteComment(id);
 		if(count==0){
 			return Response.status(Response.Status.BAD_REQUEST).build();
 			}

@@ -1,4 +1,4 @@
-package dao.impl;
+package com.impl;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

@@ -1,9 +1,9 @@
-package dao;
+package com.dao;
 
 import java.util.List;
 
-import model.UserBean;
-import model.entity.User;
+import com.model.UserBean;
+import com.model.entity.User;
 
 public interface UserDao {
 
