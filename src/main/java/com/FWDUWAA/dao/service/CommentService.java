@@ -1,4 +1,4 @@
-package com.dao.service;
+package com.FWDUWAA.dao.service;
 
 import java.util.List;
 
@@ -11,9 +11,9 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
-import com.impl.CommentDaoImpl;
-import com.model.CommentBean;
-import com.model.entity.Comment;
+import com.FWDUWAA.CommentBean;
+import com.FWDUWAA.impl.CommentDaoImpl;
+import com.FWDUWAA.model.entity.Comment;
 
 @Path("/comment")
 public class CommentService {

@@ -1,4 +1,4 @@
-package com.impl;
+package com.FWDUWAA.impl;
 
 import java.util.List;
 
@@ -6,9 +6,10 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.dao.UserPostDao;
-import com.model.UserPostBean;
-import com.model.entity.UserPost;
+import com.FWDUWAA.SessionUtil;
+import com.FWDUWAA.UserPostBean;
+import com.FWDUWAA.dao.UserPostDao;
+import com.FWDUWAA.model.entity.UserPost;
 
 public class UserPostDaoImpl implements UserPostDao{
 

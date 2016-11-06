@@ -1,4 +1,4 @@
-package com.impl;
+package com.FWDUWAA.impl;
 
 import java.util.List;
 
@@ -6,9 +6,10 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.dao.UserDao;
-import com.model.UserBean;
-import com.model.entity.User;
+import com.FWDUWAA.SessionUtil;
+import com.FWDUWAA.UserBean;
+import com.FWDUWAA.dao.UserDao;
+import com.FWDUWAA.model.entity.User;
 
 public class UserDaoImpl implements UserDao{
 

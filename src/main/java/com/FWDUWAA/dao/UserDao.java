@@ -1,9 +1,9 @@
-package com.dao;
+package com.FWDUWAA.dao;
 
 import java.util.List;
 
-import com.model.UserBean;
-import com.model.entity.User;
+import com.FWDUWAA.UserBean;
+import com.FWDUWAA.model.entity.User;
 
 public interface UserDao {
 

@@ -1,4 +1,4 @@
-package com.model.entity;
+package com.FWDUWAA.model.entity;
 
 import java.util.HashMap;
 

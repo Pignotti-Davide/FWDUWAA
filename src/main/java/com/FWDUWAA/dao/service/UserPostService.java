@@ -1,4 +1,4 @@
-package com.dao.service;
+package com.FWDUWAA.dao.service;
 
 import java.util.List;
 
@@ -11,40 +11,40 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
-import com.impl.UserDaoImpl;
-import com.model.UserBean;
-import com.model.entity.User;
+import com.FWDUWAA.UserPostBean;
+import com.FWDUWAA.impl.UserPostDaoImpl;
+import com.FWDUWAA.model.entity.UserPost;
 
-@Path("/user")
-public class UserService {
+@Path("/userPost")
+public class UserPostService {
 
 	
 
 	@SuppressWarnings("unchecked")
 	@GET
 	@Produces("application/json")
-	public List<User> getUsers() {
-		UserDaoImpl dao = new UserDaoImpl();
+	public List<UserPost> getUserPosts() {
+		UserPostDaoImpl dao = new UserPostDaoImpl();
 		@SuppressWarnings("rawtypes")
-		List users = dao.getUsers();
-		return users;
+		List userPosts = dao.getUserPosts();
+		return userPosts;
 		}
 	
 	@POST
 	@Path("/create")
 	@Consumes("application/json")
-	public Response addUser(UserBean user){
-		UserDaoImpl dao = new UserDaoImpl();
-		dao.createUser(user);
+	public Response addUserPost(UserPostBean userPost){
+		UserPostDaoImpl dao = new UserPostDaoImpl();
+		dao.createUserPost(userPost);
 		return Response.ok().build();
 		}
 	
 	@DELETE
 	@Path("/delete/{id}")
 	@Consumes("application/json")
-	public Response deleteUser(@PathParam("id") long id){
-		UserDaoImpl dao = new UserDaoImpl();
-		int count = dao.deleteUser(id);
+	public Response deleteUserPost(@PathParam("id") long id){
+		UserPostDaoImpl dao = new UserPostDaoImpl();
+		int count = dao.deleteUserPost(id);
 		if(count==0){
 			return Response.status(Response.Status.BAD_REQUEST).build();
 			}

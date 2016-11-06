@@ -1,4 +1,4 @@
-package com.impl;
+package com.FWDUWAA.impl;
 
 import java.util.List;
 
@@ -6,9 +6,10 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.dao.CommentDao;
-import com.model.CommentBean;
-import com.model.entity.Comment;
+import com.FWDUWAA.CommentBean;
+import com.FWDUWAA.SessionUtil;
+import com.FWDUWAA.dao.CommentDao;
+import com.FWDUWAA.model.entity.Comment;
 
 public class CommentDaoImpl implements CommentDao{
 

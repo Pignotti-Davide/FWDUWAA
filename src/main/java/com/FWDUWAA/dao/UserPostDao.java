@@ -1,9 +1,9 @@
-package com.dao;
+package com.FWDUWAA.dao;
 
 import java.util.List;
 
-import com.model.UserPostBean;
-import com.model.entity.UserPost;
+import com.FWDUWAA.UserPostBean;
+import com.FWDUWAA.model.entity.UserPost;
 
 public interface UserPostDao {
 

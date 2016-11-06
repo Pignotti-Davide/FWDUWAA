@@ -1,4 +1,4 @@
-package com.impl;
+package com.FWDUWAA;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -10,7 +10,6 @@ public class SessionUtil {
 	public static SessionUtil getInstance(){
 		return instance;
 	}
-	@SuppressWarnings("deprecation")
 	private SessionUtil(){
 		Configuration configuration = new Configuration();
 		configuration.configure("hibernate.cfg.xml");

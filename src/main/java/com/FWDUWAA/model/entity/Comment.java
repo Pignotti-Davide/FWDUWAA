@@ -1,14 +1,14 @@
-package com.model;
+package com.FWDUWAA.model.entity;
 
 import java.util.HashMap;
 
-import com.model.entity.Comment;
-
-public class CommentBean {
+public class Comment {
 	private Long commentId;
 	private Long userId;
 	private String content;
 	private HashMap<Long,Comment> replies;
+	
+	
 	
 	public Long getCommentId() {
 		return commentId;
@@ -34,4 +34,8 @@ public class CommentBean {
 	public void setReplies(HashMap<Long, Comment> replies) {
 		this.replies = replies;
 	}
+	
+	
+	
+	
 }

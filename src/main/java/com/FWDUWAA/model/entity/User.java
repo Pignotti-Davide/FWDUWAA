@@ -1,15 +1,26 @@
-package com.model;
+package com.FWDUWAA.model.entity;
 
 import java.util.HashMap;
 
-import com.model.entity.UserPost;
 
-public class UserBean {
-
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+@Entity
+public class User {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long userId;
+	@Column
 	private String userName;
+	@Column
 	private String name;
+	@Column
 	private String surname;
+	@Column
+	private String password;
 	private HashMap<Long,UserPost> posts;
 	
 	
@@ -44,4 +55,16 @@ public class UserBean {
 	public void setPosts(HashMap<Long, UserPost> posts) {
 		this.posts = posts;
 	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+
+
+
+
+
 }

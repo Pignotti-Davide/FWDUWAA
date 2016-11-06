@@ -1,8 +1,8 @@
-package com.model;
+package com.FWDUWAA;
 
 import java.util.HashMap;
 
-import com.model.entity.Comment;
+import com.FWDUWAA.model.entity.Comment;
 
 public class UserPostBean {
 

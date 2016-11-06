@@ -1,9 +1,9 @@
-package com.dao;
+package com.FWDUWAA.dao;
 
 import java.util.List;
 
-import com.model.CommentBean;
-import com.model.entity.Comment;
+import com.FWDUWAA.CommentBean;
+import com.FWDUWAA.model.entity.Comment;
 
 public interface CommentDao {
 

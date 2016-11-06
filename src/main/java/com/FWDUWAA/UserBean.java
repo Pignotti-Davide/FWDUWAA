@@ -1,13 +1,16 @@
-package com.model.entity;
+package com.FWDUWAA;
 
 import java.util.HashMap;
 
-public class User {
+import com.FWDUWAA.model.entity.UserPost;
+
+public class UserBean {
 
 	private Long userId;
 	private String userName;
 	private String name;
 	private String surname;
+	private String password;
 	private HashMap<Long,UserPost> posts;
 	
 	
@@ -42,10 +45,11 @@ public class User {
 	public void setPosts(HashMap<Long, UserPost> posts) {
 		this.posts = posts;
 	}
-
-
-
-
-
-
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
 }
